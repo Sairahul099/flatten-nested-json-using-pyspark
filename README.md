@@ -7,13 +7,13 @@ In this program we are going to read the json lines as text this is because when
 
 The following code will work on large json datasets in aws glue jobs.In local pc these will work on small datasets
 In the following we read the json files as text and use json.loads function to get all the nested keys with dot notation and 
-datatypes of respective fields.If we encounter any array in path we are going to give val and index position while naming nested key
-All the above functionalities are achieved using pyspark udf function 
+datatypes of respective fields.If we encounter any array in path we are going to give val and index position while naming nested key.
+All the above nested json paths can be extracted using pyspark udf
 
 After getting all the nested key values pairs with dot notation and datatypes.if we encounter different datatypes for a single field
 we are going to cast them explicitly as string
 
-With use of nested key value paths in dot notation and datatype we are going to get the values using respective datatype udf
+With use of nested key value paths in dot notation and datatype we are going to get the values using respective datatype udf and append them as dataframe columns
 
 
 
