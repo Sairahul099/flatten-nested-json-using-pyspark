@@ -15,6 +15,8 @@ we are going to cast them explicitly as string
 
 With use of nested key value paths in dot notation and datatype we are going to get the values using respective datatype udf and append them as dataframe columns
 
+Please make any improvements if needed
+
 
 
 
