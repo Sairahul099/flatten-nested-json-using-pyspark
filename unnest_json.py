@@ -1,4 +1,3 @@
-
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import expr,to_date,lit,udf,to_timestamp,to_json,get_json_object,col
 from pyspark.sql.types import StringType,TimestampType,LongType,DoubleType
@@ -80,7 +79,7 @@ def getJsonPath(jsonString):
 
 
 
-castFields = udf(getJsonPath, StringType())
+jsonPaths = udf(getJsonPath, StringType())
 stringData = udf(getStringType, StringType())
 longData = udf(getLongType,LongType())
 doubleData = udf(getDoubleType,DoubleType())
