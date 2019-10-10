@@ -1,4 +1,5 @@
 # Flatten-nested-json-using-pyspark
+Flatten-nested-json-using-pyspark
 
 The following repo is about to unnest all the fields of json and make them as top level dataframe Columns using pyspark in aws glue Job.
 When a spark RDD reads a dataframe using json function it identifies the top level keys of json and converts them to dataframe columns.
